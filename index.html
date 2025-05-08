@@ -1,149 +1,77 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Antony Esthak Twinson - Portfolio</title>
   <link href="https://fonts.googleapis.com/css2?family=Archivo+Narrow&family=Julius+Sans+One&family=Open+Sans&family=Source+Sans+Pro&display=swap" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
   <link rel="stylesheet" href="index.css">
 </head>
 <body>
-  <page size="A4">
-    <div class="container">
-      <div class="leftPanel">
-        <img src="avatar.jpeg"/>
-        <div class="details">
-          <div class="item bottomLineSeparator">
-            <h2>
-              CONTACT
-            </h2>
-            <div class="smallText">
-              <p>
-                <i class="fa fa-phone contactIcon" aria-hidden="true"></i>
-                +91 93451 50124
-              </p>
-              <p>
-                <i class="fa fa-envelope contactIcon" aria-hidden="true"></i>
-                <a href="mailto:twinson333@gmail.com">
-                  twinson@gmail.com
-                </a>
-              </p>
-              <p>
-                <i class="fa fa-map-marker contactIcon" aria-hidden="true"></i>
-                Tamil Nadu, India
-              </p>
-              <p>
-                <i class="fa fa-linkedin-square contactIcon" aria-hidden="true"></i>
-                <a href="https://www.linkedin.com/in/antonyesthaktwinson/">
-                  EsthakTwinson A
-                </a>
-              </p>
-            </div>
-          </div>
-          <div class="item bottomLineSeparator">
-            <h2>
-              SKILLS
-            </h2>
-            <div class="smallText">
-              <div class="skill">
-                <div>
-                  <span><li>Linux</li></span>
-                </div>
-              </div>
-
-              <div class="skill">
-                <div>
-                  <span><li>BurpSuite</li></span>
-                </div>
-              </div>
-
-              <div class="skill">
-                <div>
-                  <span><li>Python</li></span>
-                </div>
-              </div>
-
-              <div class="skill">
-                <div>
-                  <span><li>Bash Scripting</li></span>
-                </div>
-              </div>
-              
-              <div class="skill">
-                <div>
-                  <span><li>Web Security Concepts</li></span>
-                </div>
-              </div>
-              
-              <div class="skill">
-                <div>
-                  <span><li>Secure Coding</li></span>
-                </div>
-              </div>
-
-            </div>
-          </div>
-          <div class="item">
-            <h2>
-              EDUCATION
-            </h2>
-            <div class="smallText">
-              <p class="bolded white">
-                Bachelor of Engineering
-              </p>
-              <p>
-                DMI College of Engineering
-                </p>
-                <p>
-                2022 - 2026
-              </p>
-            </div>
-          </div>
-        </div>
-        
-      </div>
-      <div class="rightPanel">
-        <div>
-          <h1>
-            ANTONY ESTHAK TWINSON
-          </h1>
+  <main class="container">
+    <aside class="leftPanel">
+      <img src="avatar.jpeg" alt="Profile Picture"/>
+      <section class="details">
+        <div class="item">
+          <h2>Contact</h2>
           <div class="smallText">
-            <h3>
-              Ethical Hacker
-            </h3>
+            <p><i class="fa fa-phone contactIcon"></i> +91 93451 50124</p>
+            <p><i class="fa fa-envelope contactIcon"></i> <a href="mailto:twinson333@gmail.com">twinson@gmail.com</a></p>
+            <p><i class="fa fa-map-marker-alt contactIcon"></i> Tamil Nadu, India</p>
+            <p><i class="fab fa-linkedin contactIcon"></i> <a href="https://www.linkedin.com/in/antonyesthaktwinson/">EsthakTwinson A</a></p>
           </div>
         </div>
-        <div>
-          <h2>
-            About me
-          </h2>
+        <div class="item">
+          <h2>Skills</h2>
+          <ul class="skillsList smallText">
+            <li>Linux</li>
+            <li>Burp Suite</li>
+            <li>Python</li>
+            <li>Bash Scripting</li>
+            <li>Web Security Concepts</li>
+            <li>Secure Coding</li>
+          </ul>
+        </div>
+        <div class="item">
+          <h2>Education</h2>
           <div class="smallText">
-            <p>
-              As a third-year engineering student with a keen interest in cybersecurity and penetration tester. My academic journey has provided me with a solid understanging of network protocols, operating systems and secure coding practices.   
-            </p>
-            <p>
-              I aslo have hands on experience through a platform called tryhackme.com in which I am one of the top 2% users.I am excited to aplly my skills in a professional setting.
-            </p>
+            <p class="bolded white">Bachelor of Engineering</p>
+            <p>DMI College of Engineering</p>
+            <p>2022 - 2026</p>
           </div>
         </div>
-        <div class="workExperience">
-          <h2>
-            Projects
-          </h2>
-          <h3>Automated Vulnerability Scanner for XSS, CSRF, and CRLF Using Python and Bash</h3><a href="">Link</a>
-     		<p>
-     		A lightweight scanner developed in Python to detect common web vulnerabilities including Cross-Site Scripting (XSS), Cross-Site Request Forgery (CSRF), and Carriage Return Line Feed (CRLF) injection. The tool is seamlessly automated using a Bash script to streamline scanning tasks across multiple targets or endpoints.
-     		</p>
-     		<br>
+      </section>
+    </aside>
+
+    <section class="rightPanel">
+      <header>
+        <h1>Antony Esthak Twinson</h1>
+        <h3 class="smallText">Ethical Hacker</h3>
+      </header>
+
+      <section>
+        <h2>About Me</h2>
+        <div class="smallText">
+          <p>I am a third-year engineering student passionate about cybersecurity and penetration testing. My academic journey has given me a solid foundation in network protocols, operating systems, and secure coding practices.</p>
+          <p>I also have hands-on experience through platforms like TryHackMe, where I'm in the top 2% of users. I'm eager to apply my skills in a professional setting.</p>
         </div>
-        <div class="WorkExperience">
-        <h2>
-           TryHackMe badge
-        </h2>
-           <img src="https://tryhackme-badges.s3.amazonaws.com/Twinson.png" alt="Your Image Badge" />
+      </section>
+
+      <section>
+        <h2>Projects</h2>
+        <div class="project smallText">
+          <h3>Automated Vulnerability Scanner</h3>
+          <a href="#">Project Link</a>
+          <p>This tool detects XSS, CSRF, and CRLF vulnerabilities using Python and automates scanning with a Bash script. It's designed for lightweight, scalable testing across multiple endpoints.</p>
         </div>
-      </div>
-    </div>
-  </page>  
+      </section>
+
+      <section>
+        <h2>TryHackMe Badge</h2>
+        <img class="badge" src="https://tryhackme-badges.s3.amazonaws.com/Twinson.png" alt="TryHackMe Badge" />
+      </section>
+    </section>
+  </main>
 </body>
 </html>

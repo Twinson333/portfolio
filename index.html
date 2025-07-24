@@ -1,78 +1,222 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Antony Esthak Twinson - Portfolio</title>
-  <link href="https://fonts.googleapis.com/css2?family=Archivo+Narrow&family=Julius+Sans+One&family=Open+Sans&family=Source+Sans+Pro&display=swap" rel="stylesheet">
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="index.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Antony Esthak Twinson | Offensive Security Specialist</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Kanit:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
-<body>
-  <main class="container">
-    <aside class="leftPanel">
-      <img src="avatar.jpeg" alt="Profile Picture"/>
-      <section class="details">
-        <div class="item">
-          <h2>Contact</h2>
-          <div class="smallText">
-            <p><i class="fa fa-phone contactIcon"></i> +91 93451 50124</p>
-            <p><i class="fa fa-envelope contactIcon"></i> <a href="mailto:twinson333@gmail.com">twinson@gmail.com</a></p>
-            <p><i class="fa fa-map-marker-alt contactIcon"></i> Tamil Nadu, India</p>
-            <p><i class="fab fa-linkedin contactIcon"></i> <a href="https://www.linkedin.com/in/antonyesthaktwinson/">EsthakTwinson A</a></p>
+<body class="dark">
+  <div class="terminal-window" id="terminal">
+    <div class="terminal-header">
+      <div class="terminal-buttons">
+        <span class="terminal-btn red"></span>
+        <span class="terminal-btn yellow"></span>
+        <span class="terminal-btn green"></span>
+      </div>
+      <span class="terminal-title">root@twinson:~</span>
+    </div>
+    <div class="terminal-content" id="terminal-content">
+      <p>> Initializing security portfolio...</p>
+      <p>> Loading pentesting modules...</p>
+      <p>> Welcome to Antony Esthak Twinson's cybersecurity hub</p>
+      <p>> Type 'help' for available commands</p>
+      <p class="terminal-input-line">><span class="terminal-cursor">_</span></p>
+    </div>
+  </div>
+
+  <div class="main-content hidden" id="main-content">
+    <header class="cyber-header">
+      <div class="profile-container">
+        <div class="hexagon">
+          <div class="hexagon-inner">
+            <img src="img.jpg" alt="Profile Picture" class="profile-img">
           </div>
         </div>
-        <div class="item">
-          <h2>Skills</h2>
-          <ul class="skillsList smallText">
-            <li>Linux</li>
-            <li>Burp Suite</li>
-            <li>Python</li>
-            <li>Bash Scripting</li>
-            <li>Web Security Concepts</li>
-            <li>Secure Coding</li>
-          </ul>
-        </div>
-        <div class="item">
-          <h2>Education</h2>
-          <div class="smallText">
-            <p class="bolded white">Bachelor of Engineering</p>
-            <p>DMI College of Engineering</p>
-            <p>2022 - 2026</p>
+        <div class="scanline"></div>
+      </div>
+      <h1 class="glitch" data-text="ANTONY ESTHAK TWINSON">ANTONY ESTHAK TWINSON</h1>
+      <p class="cyber-subtitle">
+        <span class="typewriter" data-strings='["OffSec Specialist", "Bug Bounty Hunter", "Top 2% TryHackMe", "Security Researcher"]'></span>
+      </p>
+      <div class="social-icons">
+        <a href="https://linkedin.com/in/antonyesthaktwinson" target="_blank"><i class="fab fa-linkedin"></i></a>
+        <a href="https://medium.com/@cybertamarin" target="_blank"><i class="fab fa-medium"></i></a>
+        <a href="mailto:twinson333@gmail.com"><i class="fas fa-envelope"></i></a>
+        <a href="https://tryhackme.com/p/cybertamarin" target="_blank"><i class="fas fa-lock"></i></a>
+      </div>
+    </header>
+
+    <nav class="cyber-nav">
+      <a href="#about" class="nav-link" data-hover="> whoami">about</a>
+      <a href="#skills" class="nav-link" data-hover="> skillset">skills</a>
+      <a href="#experience" class="nav-link" data-hover="> history">experience</a>
+      <a href="#projects" class="nav-link" data-hover="> repos">projects</a>
+      <a href="#contact" class="nav-link" data-hover="> ping">contact</a>
+    </nav>
+
+    <main class="cyber-main">
+      <section id="about" class="cyber-section">
+        <h2><span class="section-number">01</span> <span class="section-title">whoami</span></h2>
+        <div class="content-grid">
+          <div class="about-content">
+            <p>Cybersecurity specialist and engineering student with proven offensive security capabilities. Ranked in the top 2% of TryHackMe's global community with extensive hands-on penetration testing experience.</p>
+            <p>Identified and reported critical vulnerabilities in major platforms including Google, LinkedIn, and Edunet Foundation, contributing to improved security for millions of users.</p>
+            <div class="stats-grid">
+              <div class="stat-box">
+                <div class="stat-number">20+</div>
+                <div class="stat-label">Vulnerabilities Found</div>
+              </div>
+              <div class="stat-box">
+                <div class="stat-number">150+</div>
+                <div class="stat-label">Labs Completed</div>
+              </div>
+              <div class="stat-box">
+                <div class="stat-number">Top 2%</div>
+                <div class="stat-label">TryHackMe Rank</div>
+              </div>
+            </div>
+          </div>
+          <div class="terminal-snippet">
+            <pre><code class="language-bash">$ cat education.txt
+DMI College of Engineering
+B.E. Computer Science
+Expected: 2026
+
+$ cat certifications.txt
+- eJPT (In Progress)
+- TryHackMe Top 2%
+- Multiple Bug Bounty Acknowledgments</code></pre>
           </div>
         </div>
       </section>
-    </aside>
 
-    <section class="rightPanel">
-      <header>
-        <h1>Antony Esthak Twinson</h1>
-        <h3 class="smallText">Ethical Hacker</h3>
-      </header>
-
-      <section>
-        <h2>About Me</h2>
-        <div class="smallText">
-          <p>I am a third-year engineering student passionate about cybersecurity and penetration testing. My academic journey has given me a solid foundation in network protocols, operating systems, and secure coding practices.</p>
-          <p>I also have hands-on experience through platforms like TryHackMe, where I'm in the top 2% of users. I'm eager to apply my skills in a professional setting.</p>
+      <section id="skills" class="cyber-section">
+        <h2><span class="section-number">02</span> <span class="section-title">skillset</span></h2>
+        <div class="skills-grid">
+          <div class="skill-category">
+            <h3>Offensive Security</h3>
+            <ul class="skill-list">
+              <li>Penetration Testing</li>
+              <li>Web Application Security</li>
+              <li>Network Security</li>
+              <li>Privilege Escalation</li>
+              <li>Vulnerability Research</li>
+            </ul>
+          </div>
+          <div class="skill-category">
+            <h3>Tools & Technologies</h3>
+            <ul class="skill-list">
+              <li>Burp Suite</li>
+              <li>Metasploit</li>
+              <li>Nmap</li>
+              <li>Wireshark</li>
+              <li>SQLMap</li>
+            </ul>
+          </div>
+          <div class="skill-category">
+            <h3>Development</h3>
+            <ul class="skill-list">
+              <li>Python</li>
+              <li>Bash Scripting</li>
+              <li>JavaScript</li>
+              <li>Secure Coding</li>
+              <li>Automation</li>
+            </ul>
+          </div>
         </div>
       </section>
 
-      <section>
-        <h2>Projects</h2>
-        <div class="project smallText">
-          <h3>Automated Vulnerability Scanner</h3>
-          <a href="https://github.com/Twinson333/vuln-toolkit">Project Link</a>
-          <p>This tool detects XSS, CSRF, and CRLF vulnerabilities using Python and automates scanning with a Bash script. It's designed for lightweight, scalable testing across multiple endpoints.</p>
+      <section id="experience" class="cyber-section">
+        <h2><span class="section-number">03</span> <span class="section-title">history</span></h2>
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="timeline-date">2023 - Present</div>
+            <div class="timeline-content">
+              <h3>Bug Bounty Hunter</h3>
+              <p>Reported critical vulnerabilities (XSS, ATO, IDOR) in 20+ platforms including Google, LinkedIn, and Edunet Foundation. Earned acknowledgments and bounties for security findings.</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-date">2022 - Present</div>
+            <div class="timeline-content">
+              <pre><h3>                     TryHackMe Top Performer</h3></pre>
+              <p>Ranked in top 2% of 4M+ users. Completed 150+ practical labs covering exploitation, privilege escalation, and malware analysis. Mastered OWASP Top 10 vulnerabilities.</p>
+            </div>
+          </div>
         </div>
       </section>
 
-      <section>
-        <h2>TryHackMe Badge</h2>
-        <img class="badge" src="https://tryhackme-badges.s3.amazonaws.com/Twinson.png" alt="TryHackMe Badge" />
+      <section id="projects" class="cyber-section">
+        <h2><span class="section-number">04</span> <span class="section-title">repos</span></h2>
+        <div class="project-cards">
+          <div class="project-card">
+            <div class="project-icon"><i class="fas fa-search"></i></div>
+            <h3>Web Vulnerability Scanner</h3>
+            <p>Python script to detect XSS, SQLi, and open redirects in web applications. Automated scanning with customizable payloads.</p>
+            <div class="project-tech">Python | Requests | BeautifulSoup</div>
+          </div>
+          <div class="project-card">
+            <div class="project-icon"><i class="fas fa-flag"></i></div>
+            <h3>CTF Solutions</h3>
+            <p>Collection of documented solutions for TryHackMe and HackTheBox challenges covering various attack vectors.</p>
+            <div class="project-tech">Pentesting | Writeups | Methodology</div>
+          </div>
+        </div>
       </section>
-    </section>
-  </main>
-  <script id="ze-snippet" src="https://static.zdassets.com/ekr/snippet.js?key=a3405f26-5e93-4b94-9034-39caaf9e7c16"> </script>
+
+      <section id="contact" class="cyber-section">
+  <h2><span class="section-number">05</span> <span class="section-title">ping</span></h2>
+  <div class="contact-grid">
+    <div class="contact-info">
+      <div class="contact-item">
+        <i class="fas fa-envelope"></i>
+        <a href="mailto:twinson333@gmail.com">twinson333@gmail.com</a>
+      </div>
+      <div class="contact-item">
+        <i class="fas fa-phone"></i>
+        <span>+91 9345150124</span>
+      </div>
+      <div class="contact-item">
+        <i class="fas fa-file-pdf"></i>
+        <a href="/Antony_Esthak_Twinson_Resume.pdf" download>Download Resume</a>
+      </div>
+    </div>
+    <form id="contactForm" class="cyber-form">
+      <div class="form-group">
+        <label for="name">> Name:</label>
+        <input type="text" id="name" name="name" required>
+      </div>
+      <div class="form-group">
+        <label for="email">> Email:</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+      <div class="form-group">
+        <label for="message">> Message:</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+      </div>
+      <button type="submit" class="cyber-button">Send Packet <i class="fas fa-paper-plane"></i></button>
+    </form>
+  </div>
+</section>
+    </main>
+
+    <footer class="cyber-footer">
+      <div class="footer-content">
+        <div class="footer-copyright">
+          &copy; 2025 Antony Esthak Twinson. All systems operational.
+        </div>
+        <div class="footer-links">
+          <a href="https://tryhackme.com/p/cybertamarin" target="_blank">TryHackMe</a>
+          <a href="https://bugcrowd.com" target="_blank">Bugcrowd</a>
+          <a href="https://hackerone.com" target="_blank">HackerOne</a>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
 </body>
 </html>

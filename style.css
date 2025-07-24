@@ -564,48 +564,41 @@ nav, .cyber-nav {
   margin-bottom: 10px;
 }
 
-/* Project Cards */
-.project-cards {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 30px;
-}
-
+/* Project Cards - Make them clickable */
 .project-card {
+  display: block;
   background-color: rgba(15, 15, 15, 0.7);
   border: 1px solid rgba(0, 255, 0, 0.2);
   padding: 30px;
-  transition: transform 0.3s, border-color 0.3s;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  color: var(--light-text);
 }
 
 .project-card:hover {
   transform: translateY(-5px);
   border-color: var(--primary);
-}
-
-.project-icon {
-  font-size: 2rem;
-  color: var(--primary);
-  margin-bottom: 15px;
+  box-shadow: 0 5px 15px rgba(0, 255, 0, 0.2);
+  background-color: rgba(0, 255, 0, 0.05);
 }
 
 .project-card h3 {
-  margin-top: 0;
-  margin-bottom: 15px;
   color: var(--light-text);
+  transition: color 0.3s ease;
 }
 
-.project-card p {
-  margin-bottom: 20px;
-  color: var(--light-text);
-  opacity: 0.8;
+.project-card:hover h3 {
+  color: var(--primary);
 }
 
 .project-tech {
-  font-family: 'JetBrains Mono', monospace;
-  font-size: 0.8rem;
   color: var(--primary);
   opacity: 0.7;
+  transition: opacity 0.3s ease;
+}
+
+.project-card:hover .project-tech {
+  opacity: 1;
 }
 
 /* Contact Section */
